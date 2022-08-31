@@ -45,4 +45,3 @@ const createValidator = (target, validator) => {
 let proxy = createValidator(target, validators);
 proxy.name = 1
  */
-update

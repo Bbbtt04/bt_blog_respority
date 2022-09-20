@@ -1,6 +1,6 @@
-function MyNew(className,...args) {
+function MyNew(className, ...args) {
   let obj = {}
   obj.__proto__ = MyNew.prototype
-  className.apply(obj,...args)
+  className.apply(obj, ...args)
   return obj
 }

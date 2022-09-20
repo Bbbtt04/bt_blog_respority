@@ -9,7 +9,7 @@ class Subject {
   }
   setState(newState) {
     this.state = newState
-    this.observer.forEach(o => o.updata(this))
+    this.observer.forEach((o) => o.updata(this))
   }
 }
 
@@ -18,7 +18,7 @@ class Observer {
     this.name = name
   }
   updata(baby) {
-    console.log(this.name,baby);
+    console.log(this.name, baby)
   }
 }
 let baby = new Subject('baby')

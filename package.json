@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "tsd": "^0.23.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.7.1"
   }
 }

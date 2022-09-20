@@ -19,17 +19,17 @@ const child = new Child(1);
 child.getVal() */
 
 function Parent(name) {
-    this.name = name;
-    this.colors = ['red','blue','yellow']
+  this.name = name
+  this.colors = ['red', 'blue', 'yellow']
 }
 Parent.prototype.getName = function () {
-    console.log(this.name);
+  console.log(this.name)
 }
 function Child(name) {
-    Parent.call(this,name)
+  Parent.call(this, name)
 }
 Child.prototype = Object.create(Parent.prototype)
-Child.prototype.constructor = Child;
+Child.prototype.constructor = Child
 
 const child = new Child('wbt')
 child.getName()

@@ -10,6 +10,7 @@ const obj = new Proxy(data, {
   get(target, key) {
     console.log(`${target}的${key} get`)
     // 没有activeEffect直接return
+    if (!activeEffect) return target[key]
     // 根据target获取桶中的depsMap
     let depsMap = bucket.get(target)
     // 如果不存在depsMap 新建一个Map并与target关联

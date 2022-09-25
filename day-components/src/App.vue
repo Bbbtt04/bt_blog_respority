@@ -1,20 +1,5 @@
+<script setup lang="ts"></script>
+
 <template>
-  <div>
-  </div>
+  <h1 fw-500 bg-gray>Hello world</h1>
 </template>
-
-<script lang="ts" setup>
-import Dialog from '@/components/dialog/index'
-import { onMounted } from 'vue';
-
-onMounted(() => {
-  Dialog('Welcome', '我的第一个组件')
-})
-</script>
-
-<style>
-* {
-  padding: 0;
-  margin: 0;
-}
-</style>
